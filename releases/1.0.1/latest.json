@@ -9,7 +9,7 @@
       },
       "darwin-aarch64": {
         "signature": "Content of app.tar.gz.sig",
-        "url": "http://aiputing.com/v1.0.2/app-aarch64.app.tar.gz?e=1688134583&token=TxmOEzDF3rdrwQ54ij2EvEuwon_fbbDXtf-27g3I:864kXBTolGjbeoPkkCAOVhR38E0="
+        "url": "https://github.com/Neo110/AIPuting/releases/download/v1.0.1/app-aarch64.app.tar.gz"
       },
       "linux-x86_64": {
         "signature": "Content of app.AppImage.tar.gz.sig",
