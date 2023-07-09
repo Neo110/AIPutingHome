@@ -2422,3 +2422,370 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+
+
+/* 添加下载 */
+
+
+
+.alt-downloads {
+  text-align: center
+}
+
+.alt-downloads .snap-button {
+  text-align: left;
+  padding-left: 2px
+}
+
+.alt-downloads .download-icon {
+  display: inline
+}
+
+.alt-downloads .download-icon-accessible {
+  display: none
+}
+
+@media screen and (-ms-high-contrast: black-on-white) {
+  .alt-downloads .download-icon-accessible {
+      display: inline
+  }
+
+  .alt-downloads .download-icon {
+      display: none
+  }
+}
+
+.alt-downloads .download {
+  padding: 0 25px;
+  display: inline-block;
+  vertical-align: top
+}
+
+.alt-downloads .home.download {
+  display: none
+}
+
+.alt-downloads.win .download.osx {
+  display: inline-block
+}
+
+.alt-downloads.win .download.linux {
+  display: inline-block
+}
+
+.alt-downloads.linux .download.osx {
+  display: inline-block
+}
+
+.alt-downloads.linux .download.win {
+  display: inline-block
+}
+
+.alt-downloads.osx .download.win {
+  display: inline-block
+}
+
+.alt-downloads.osx .download.linux {
+  display: inline-block
+}
+
+.alt-downloads .logo {
+  height: 100px;
+  width: 100px;
+  background-size: contain !important;
+  margin: 0 auto;
+  -ms-high-contrast-adjust: none
+}
+
+.alt-downloads .logo.windows {
+  background: url("../img/windows-logo.png") center center no-repeat
+}
+
+.alt-downloads .logo.mac {
+  background: url("../img/apple-logo.svg") center center no-repeat
+}
+
+@media screen and (-ms-high-contrast: white-on-black) {
+  .alt-downloads .logo.mac {
+      background-image: url("../img/apple-logo-inverted.svg")
+  }
+}
+
+.alt-downloads .logo.linux {
+  background: url("../img/linux-logo.png") center center no-repeat
+}
+
+.alt-downloads .link-button {
+  color: #fff;
+  margin: 60px 0 5px;
+  padding: 10px 0;
+  font-size: 1.8rem;
+  width: 240px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  border: 0px;
+}
+.alt-downloads .link-button .download-icon {
+  transition: 0.3s;
+}
+
+.alt-downloads .link-button:hover .download-icon {
+  transform: translateY(5px);
+}
+
+
+.alt-downloads .link-button small {
+  display: block;
+  margin-top: .75rem;
+  color: rgba(255,255,255,.9);
+  font-size: 12px
+}
+
+.alt-downloads .link-button small.build-type {
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-weight: 300
+}
+
+.alt-downloads .link-button:hover {
+  background-color: #4153f1bf
+}
+
+.alt-downloads .link-button:focus {
+  background-color: #4154f1;
+  outline-offset: 1px
+}
+
+.alt-downloads .link-button[data-os=linux64_deb],.alt-downloads .link-button[data-os=linux64_rpm] {
+  width: 147px
+}
+
+.alt-downloads .link-button img {
+  position: relative;
+  top: -2px;
+  margin-right: 10px
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .alt-downloads .link-button {
+      border: 2px #fff solid
+  }
+}
+
+.alt-downloads .sublink {
+  display: block;
+  font-size: 12px
+}
+
+.alt-downloads .terms {
+  padding: 4rem 19%
+}
+
+.alt-downloads .terms p {
+  font-size: 1.4rem;
+  line-height: 3rem
+}
+
+.alt-downloads .swimlane {
+  min-height: auto;
+  padding: 1.5rem
+}
+
+.alt-downloads.insiders-callout .swimlane {
+  margin-bottom: 2rem
+}
+
+.alt-downloads.insiders-callout .swimlane h2 {
+  font-weight: 600;
+  margin-bottom: .5rem;
+  color: #242424;
+  font-size: 2.1rem
+}
+
+.alt-downloads.insiders-callout .swimlane .call-to-action {
+  font-size: 1.8rem;
+  color: #242424
+}
+
+button, .link-button {
+  font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 35px;
+  display: inline-block;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* .alt-downloads .link-button {
+  color: #fff;
+  margin: 20px 0 5px;
+  padding: 10px 0;
+  font-size: 1.8rem;
+  width: 240px;
+  background-color: #4154f1;
+}
+.alt-downloads .link-button small {
+  display: block;
+  margin-top: 0.75rem;
+  color: rgba(255,255,255,.9);
+  font-size: 12px;
+} */
+
+
+button,.link-button {
+  font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 35px;
+  display: inline-block;
+  color: inherit;
+  cursor: pointer
+}
+
+.link-button:hover {
+  text-decoration: none;
+  /* color: inherit */
+}
+
+.dlink {
+  cursor: pointer
+}
+
+.platform-link {
+  background: #4154f1;
+  color: #fff;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 0 3px;
+  white-space: nowrap;
+  font-size: 12px
+}
+
+.platform-link:hover {
+  background-color: #4153f1bf;
+  color: #fff;
+  text-decoration: none
+}
+
+.platform-link:focus {
+  background-color: #005ba4;
+  color: #fff;
+  text-decoration: none;
+  outline-offset: 1px
+}
+
+
+
+.cli-downloads {
+  height: 48px
+}
+
+@media(min-width: 1200px) {
+  .alt-downloads .terms {
+      padding:20px 20%
+  }
+}
+
+.home .alt-downloads .swimlane {
+  padding-top: 0
+}
+
+#alt-downloads .win-downloads {
+  width: 94%
+}
+
+#alt-downloads .linux-downloads {
+  width: 55%
+}
+
+#alt-downloads .mac-downloads {
+  width: 47%
+}
+
+#alt-downloads .win-downloads,#alt-downloads .linux-downloads,#alt-downloads .mac-downloads {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#alt-downloads table.win-downloads col:nth-of-type(1),.insiders-builds table.win-downloads col:nth-of-type(1) {
+  width: 135px
+}
+
+#alt-downloads table.linux-downloads col:nth-of-type(1),.insiders-builds table.linux-downloads col:nth-of-type(1) {
+  width: 75px
+}
+
+#alt-downloads table.win-downloads col:nth-of-type(2),#alt-downloads table.win-downloads col:nth-of-type(3),#alt-downloads table.linux-downloads col:nth-of-type(2),#alt-downloads table.linux-downloads col:nth-of-type(3),.insiders-builds table.win-downloads col:nth-of-type(2),.insiders-builds table.win-downloads col:nth-of-type(3),.insiders-builds table.linux-downloads col:nth-of-type(2),.insiders-builds table.linux-downloads col:nth-of-type(3) {
+  width: 45px
+}
+
+.download-btns.insiders-builds .win-downloads,.download-btns.insiders-builds .linux-downloads,.download-btns.insiders-builds .mac-downloads {
+  margin: 16px auto 20px auto
+}
+
+.download-btns button {
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 10px 0;
+  margin: 20px 0 5px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0066b8;
+  text-decoration: none;
+  width: 280px
+}
+
+.download-btns button img {
+  position: relative;
+  top: -2px;
+  margin-right: 10px
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .download-btns button {
+      border: 2px solid #fff
+  }
+}
+
+.download-btns .linux .left-btn {
+  margin-left: 5px
+}
+
+.download-btns .linux button {
+  width: 147px
+}
+
+.download-btns small {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,.9);
+  display: block
+}
+
+.download-btns .alts {
+  margin-top: 16px
+}
+
+.download-btns .alts a {
+  cursor: pointer
+}
+
+.download-btns .alts table td {
+  padding: 0 2px
+}
+
+.download-btns .alts table td.snap-button {
+  text-align: left;
+  padding-left: 2px
+}
+
+.win-downloads strong {
+  font-weight: bold;
+  font-size: 14px !important;
+}
