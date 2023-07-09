@@ -2495,7 +2495,8 @@ section {
   width: 100px;
   background-size: contain !important;
   margin: 0 auto;
-  -ms-high-contrast-adjust: none
+  -ms-high-contrast-adjust: none;
+  margin-top: 50px;
 }
 
 .alt-downloads .logo.windows {
