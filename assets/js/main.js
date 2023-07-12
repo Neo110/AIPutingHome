@@ -287,6 +287,24 @@
     aos_init();
   });
 
+  on('click', '.link-button', function(e) {
+     // 判断系统是什么系统什么版本下载对应的软件
+      var u = navigator.userAgent;
+      var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+      var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+      if(isAndroid){
+        window.location.href = "https://www.pgyer.com/5Q1L";
+      }
+      if(isiOS){
+        window.location.href = "https://www.pgyer.com/5Q1L";
+      }
+      // Windows x86 64
+      
+ 
+
+    //  alert("This is a link button");
+  });
+
   /**
    * Initiate Pure Counter 
    */
