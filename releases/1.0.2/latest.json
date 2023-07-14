@@ -20,7 +20,7 @@
         "url": "http://www.aiputing.com/releases/1.0.3/app-amd64.AppImage.tar.gz"
       },
       "windows-x86_64": {
-        "signature": "Content of app.msi.sig",
+        "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWdGOUw5czBBUWNmL0VGYWJnYkoxTzZDQzJ4aGRCc3AzYmdGZkRPejU5djRCTmZLMlNxbkU1RnNXMU0vVGNJK3AxTlVjQ3ZUeE1lZTBnc3V2TjBUSlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzAyMzczCWZpbGU6QUlQdXRpbmdfMS4wLjNfeDY0X2VuLVVTLm1zaS56aXAKYXFHZVE3OEtEcGhqSC9rcGs2VGgycFJtNzNoT0pRMkJDamd0cy9KSFNXMkNGMmlLakpKaXhzNUNWdzVSS3FFSTd3K2drK3d4cmNudkpGeURhZWhNQUE9PQo=",
         "url": "http://www.aiputing.com/releases/1.0.3/AIPuting_1.0.3_x64_en_US.msi"
       },
       "windows-aarch64": {
