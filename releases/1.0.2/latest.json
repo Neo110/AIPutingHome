@@ -1,0 +1,23 @@
+{
+    "version": "v1.0.3",
+    "notes": "Test version",
+    "pub_date": "2020-06-22T19:25:57Z",
+    "platforms": {
+      "darwin-x86_64": {
+        "signature": "Content of app.tar.gz.sig",
+        "url": "http://www.aiputing.com/releases/v1.0.3/darwin-x86_64.dmg"
+      },
+      "darwin-aarch64": {
+        "signature": "Content of app.tar.gz.sig",
+        "url": "http://www.aiputing.com/releases/v1.0.3/AIPuting_1.0.3_aarch64.dmg"
+      },
+      "linux-x86_64": {
+        "signature": "Content of app.AppImage.tar.gz.sig",
+        "url": "http://www.aiputing.com/releases/1.0.3/app-amd64.AppImage.tar.gz"
+      },
+      "windows-x86_64": {
+        "signature": "Content of app.msi.sig",
+        "url": "http://www.aiputing.com/releases/v1.0.3/AIPuting_1.0.3_x64_en_US.msi"
+      }
+    }
+  }
