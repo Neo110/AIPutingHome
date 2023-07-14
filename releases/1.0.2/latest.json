@@ -5,11 +5,11 @@
     "platforms": {
       "darwin-x86_64": {
         "signature": "Content of app.tar.gz.sig",
-        "url": "http://www.aiputing.com/releases/v1.0.3/darwin-x86_64.dmg"
+        "url": "http://www.aiputing.com/releases/1.0.3/darwin-x86_64.dmg"
       },
       "darwin-aarch64": {
         "signature": "Content of app.tar.gz.sig",
-        "url": "http://www.aiputing.com/releases/v1.0.3/AIPuting_1.0.3_aarch64.dmg"
+        "url": "http://www.aiputing.com/releases/1.0.3/AIPuting_1.0.3_aarch64.dmg"
       },
       "linux-x86_64": {
         "signature": "Content of app.AppImage.tar.gz.sig",
@@ -17,7 +17,7 @@
       },
       "windows-x86_64": {
         "signature": "Content of app.msi.sig",
-        "url": "http://www.aiputing.com/releases/v1.0.3/AIPuting_1.0.3_x64_en_US.msi"
+        "url": "http://www.aiputing.com/releases/1.0.3/AIPuting_1.0.3_x64_en_US.msi"
       }
     }
   }
