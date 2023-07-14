@@ -15,9 +15,17 @@
         "signature": "Content of app.AppImage.tar.gz.sig",
         "url": "http://www.aiputing.com/releases/1.0.3/app-amd64.AppImage.tar.gz"
       },
+      "linux-aarch64": {
+        "signature": "Content of app.AppImage.tar.gz.sig",
+        "url": "http://www.aiputing.com/releases/1.0.3/app-amd64.AppImage.tar.gz"
+      },
       "windows-x86_64": {
         "signature": "Content of app.msi.sig",
         "url": "http://www.aiputing.com/releases/1.0.3/AIPuting_1.0.3_x64_en_US.msi"
+      },
+      "windows-aarch64": {
+        "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXJ2UVNLSjdzaWJHK29ZUW1UNENoNktRLzJ0bE1ZeXpvS09OSlRuUGxUZDZ1N2ptTkxRcEdLVmtXVklkM0pyY2t4TE1scWg1NVVtY2RSQ0hkaENIa3c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzEyMTYxCWZpbGU6QUlQdXRpbmdfMS4wLjJfeDY0X2VuLVVTLm1zaS56aXAKekRGQlgvWDc5Mk9OMGx5WVpHVFFpcDdxWW1ReUpUd3EzbWF4bThDUi84bU55dHZxbWhBYkVkcDVZSWliSkI3SThaRUV1bzNKSnV4M1R0QXNmRGw5QXc9PQo=",
+        "url": "http://www.aiputing.com/releases/1.0.3/AIPuting_1.0.3_aarch64_en_US.msi"
       }
     }
   }
