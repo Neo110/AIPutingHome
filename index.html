@@ -1262,7 +1262,7 @@
           <div class="buttons">
             <div class="download "  data-aos="fade-up" data-aos-delay="100">
               <div class="logo windows"></div>
-              <button class="link-button dlink" data-os="win" id="download-alt-win" aria-label="Windows download" role="link">
+              <button class="link-button dlink" data-os="win" data-arch="auto" id="download-alt-win" aria-label="Windows download" role="link">
                 <img class="download-icon" src="assets/icons/download.svg" width="18px" height="18px" alt="Download VS Code">
                 <img class="download-icon-accessible" src="assets/icons/download-black.svg" width="18px" height="18px" alt="Download VS Code"> Windows
                 <small>Windows 8, 10, 11</small>
@@ -1272,11 +1272,9 @@
                 <tbody>
                   <tr>
                     <td><strong>User Installer</strong></td>
-                    <td><a class="dlink platform-link" data-os="win64user" id="download-alt-win64user" 
-                      href="https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_x86_64.msi" role="link" aria-label="Windows User install 64-bit x64">x64</a></td>
+                    <td><a class="dlink platform-link" data-os="win64user" data-arch="x86_64" id="download-alt-win64user"  role="link" aria-label="Windows User install 64-bit x64">x64</a></td>
                     <!-- <td><a class="dlink platform-link" data-os="win32user" id="download-alt-win32user" href="/releases/AIPuting_1.0.2_arm_x64_en-US.msi" role="link" aria-label="Windows User install 32-bit x86">x86</a></td> -->
-                    <td><a class="dlink platform-link" data-os="win32arm64user" id="download-alt-win32arm64user" 
-                      href="https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_aarch64.msi" role="link" aria-label="Windows User install Arm64">Arm64</a></td>
+                    <td><a class="dlink platform-link" data-os="win32arm64user" data-arch="aarch64" id="download-alt-win32arm64user"  role="link" aria-label="Windows User install Arm64">Arm64</a></td>
                   </tr>
                   <!-- <tr>
                     <td><strong>System Installer</strong></td>
@@ -1286,11 +1284,9 @@
                   </tr> -->
                   <tr>
                     <td><strong>.zip</strong></td>
-                    <td><a class="dlink platform-link" data-os="winzip" id="download-alt-winzip" 
-                      href="https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_x86_64.msi.zip" role="link" aria-label="Windows ZIP 64-bit x64">x64</a></td>
+                    <td><a class="dlink platform-link" data-os="winzip" data-arch="x86_64" id="download-alt-winzip" role="link" aria-label="Windows ZIP 64-bit x64">x64</a></td>
                     <!-- <td><a class="dlink platform-link" data-os="win32zip" id="download-alt-win32zip" href="#" role="link" aria-label="Windows ZIP 32-bit x86">x86</a></td> -->
-                    <td><a class="dlink platform-link" data-os="win32arm64zip" id="download-alt-win32arm64zip" 
-                      href="https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_aarch64.msi.zip" role="link" aria-label="Windows ZIP Arm64">Arm64</a></td>
+                    <td><a class="dlink platform-link" data-os="win32arm64zip" data-arch="aarch64" id="download-alt-win32arm64zip" role="link" aria-label="Windows ZIP Arm64">Arm64</a></td>
                   </tr>
                   <!-- <tr class="cli-downloads">
                     <td><strong>CLI</strong></td>
@@ -1305,11 +1301,11 @@
         
             <div class="download"  data-aos="fade-up" data-aos-delay="200">
               <div class="logo linux"></div>
-              <button class="link-button dlink" data-os="linux64_deb" id="download-alt-main-linux64_deb" aria-label="Linux Debian Ubuntu download" role="link">
+              <button class="link-button dlink" data-os="linux64_deb"  data-arch="auto"  id="download-alt-main-linux64_deb" aria-label="Linux Debian Ubuntu download" role="link">
                 <img class="download-icon" src="assets/icons/download.svg" width="18px" height="18px" alt="Download VS Code">
                 <img class="download-icon-accessible" src="assets/icons/download-black.svg" width="18px" height="18px" alt="Download VS Code"> .deb
                 <small>Debian, Ubuntu</small></button>
-              <button class="link-button dlink" data-os="linux64_rpm" id="download-alt-main-linux64_rpm" aria-label="Linux Red Hat Fedora SUSE download" role="link">
+              <button class="link-button dlink" data-os="linux64_rpm" data-arch="auto" id="download-alt-main-linux64_rpm" aria-label="Linux Red Hat Fedora SUSE download" role="link">
                 <img class="download-icon" src="assets/icons/download.svg" width="18px" height="18px" alt="Download VS Code">
                 <img class="download-icon-accessible" src="assets/icons/download-black.svg" width="18px" height="18px" alt="Download VS Code"> .rpm
                 <small>Red Hat, Fedora, SUSE</small>
@@ -1319,21 +1315,21 @@
                 <tbody>
                   <tr>
                     <td><strong>.deb</strong></td>
-                    <td><a class="dlink platform-link" data-os="linux64_deb" id="download-alt-linux64_deb" href="#" role="link" aria-label="Linux Debian Ubuntu 64-bit x64 download">x64</a></td>
+                    <td><a class="dlink platform-link" data-os="linux64_deb" data-arch="x86_64" id="download-alt-linux64_deb" href="#" role="link" aria-label="Linux Debian Ubuntu 64-bit x64 download">x64</a></td>
                     <!-- <td><a class="dlink platform-link" data-os="linuxarmhf_deb" id="download-alt-linuxarmhf_deb" href="#" role="link" aria-label="Linux Debian Ubuntu Arm 32-bit download">Arm32</a></td> -->
-                    <td><a class="dlink platform-link" data-os="linuxarm64_deb" id="download-alt-linuxarm64_deb" href="#" role="link" aria-label="Linux Debian Ubuntu Arm 64-bit download">Arm64</a></td>
+                    <td><a class="dlink platform-link" data-os="linuxarm64_deb" data-arch="aarch64" id="download-alt-linuxarm64_deb" href="#" role="link" aria-label="Linux Debian Ubuntu Arm 64-bit download">Arm64</a></td>
                   </tr>
                   <tr>
                     <td><strong>.rpm</strong></td>
-                    <td><a class="dlink platform-link" data-os="linux64_rpm" id="download-alt-linux64_rpm" href="#" role="link" aria-label="Linux Red Hat Fedora SUSE 64-bit x64 download">x64</a></td>
+                    <td><a class="dlink platform-link" data-os="linux64_rpm" data-arch="x86_64" id="download-alt-linux64_rpm" href="#" role="link" aria-label="Linux Red Hat Fedora SUSE 64-bit x64 download">x64</a></td>
                     <!-- <td><a class="dlink platform-link" data-os="linuxarmhf_rpm" id="download-alt-linuxarmhf_rpm" href="#" role="link" aria-label="Linux Red Hat Fedora SUSE Arm 32-bit download">Arm32</a></td> -->
-                    <td><a class="dlink platform-link" data-os="linuxarm64_rpm" id="download-alt-linuxarm64_rpm" href="#" role="link" aria-label="Linux Red Hat Fedora SUSE Arm 64-bit download">Arm64</a></td>
+                    <td><a class="dlink platform-link" data-os="linuxarm64_rpm" data-arch="aarch64" id="download-alt-linuxarm64_rpm" href="#" role="link" aria-label="Linux Red Hat Fedora SUSE Arm 64-bit download">Arm64</a></td>
                   </tr>
                   <tr>
                     <td><strong>.tar.gz</strong></td>
-                    <td><a class="dlink platform-link" data-os="linux64" id="download-alt-linux64" href="#" role="link" aria-label="Linux .tar.gz 64-bit x64 download">x64</a></td>
+                    <td><a class="dlink platform-link" data-os="linux64" data-arch="x86_64" id="download-alt-linux64" href="#" role="link" aria-label="Linux .tar.gz 64-bit x64 download">x64</a></td>
                     <!-- <td><a class="dlink platform-link" data-os="linuxarmhf" id="download-alt-linuxarmhf" href="#" role="link" aria-label="Linux .tar.gz Arm 32-bit download">Arm32</a></td> -->
-                    <td><a class="dlink platform-link" data-os="linuxarm64" id="download-alt-linuxarm64" href="#" role="link" aria-label="Linux .tar.gz Arm 64-bit download">Arm64</a></td>
+                    <td><a class="dlink platform-link" data-os="linuxarm64" data-arch="aarch64" id="download-alt-linuxarm64" href="#" role="link" aria-label="Linux .tar.gz Arm 64-bit download">Arm64</a></td>
                   </tr>
                   <!-- <tr>
                     <td><strong>Snap</strong></td>
@@ -1353,7 +1349,7 @@
             </div>
             <div class="download"  data-aos="fade-up" data-aos-delay="300">
               <div class="logo mac"></div>
-              <button class="link-button dlink" data-os="osx" id="download-alt-main-osx" aria-label="Mac Universal Build download" role="link">
+              <button class="link-button dlink" data-os="mac" data-arch="auto" id="download-alt-main-osx" aria-label="Mac Universal Build download" role="link">
                 <img class="download-icon" src="assets/icons/download.svg" width="18px" height="18px" alt="Download VS Code">
                 <img class="download-icon-accessible" src="assets/icons/download-black.svg" width="18px" height="18px" alt="Download VS Code"> Mac
                 <small>macOS 10.11+</small>
@@ -1363,18 +1359,14 @@
                 <tbody>
                   <tr>
                     <td><strong>.dmg</strong></td>
-                    <td style="padding-left: 3px"><a class="dlink platform-link" data-os="darwinx64" id="download-alt-darwinx64" 
-                      href="https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_x86_x64.dmg" role="link" aria-label="Mac for Intel chip download link">Intel chip</a></td>
-                    <td style="padding-left: 3px"><a class="dlink platform-link" data-os="darwinarm64" id="download-alt-darwinarm64" 
-                      href="https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_aarch64.dmg" role="link" aria-label="Mac for Apple silicon download link">Apple silicon</a></td>
+                    <td style="padding-left: 3px"><a class="dlink platform-link" data-os="darwinx64" data-arch="x86_64" id="download-alt-darwinx64" role="link" aria-label="Mac for Intel chip download link">Intel chip</a></td>
+                    <td style="padding-left: 3px"><a class="dlink platform-link" data-os="darwinarm64" data-arch="aarch64" id="download-alt-darwinarm64" role="link" aria-label="Mac for Apple silicon download link">Apple silicon</a></td>
                     <!-- <td style="padding-left: 3px"><a class="dlink platform-link" data-os="osx" id="download-alt-osx" href="#" role="link" aria-label="Mac Universal Build download">Universal</a></td> -->
                   </tr>
                   <tr>
                     <td><strong>.tar.gz</strong></td>
-                    <td style="padding-left: 3px"><a class="dlink platform-link" data-os="darwinx64" id="download-alt-darwinx64" 
-                      href="https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_x86_x64.app.tar.gz" role="link" aria-label="Mac for Intel chip download link">Intel chip</a></td>
-                    <td style="padding-left: 3px"><a class="dlink platform-link" data-os="darwinarm64" id="download-alt-darwinarm64" 
-                      href="https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_aarch64.app.tar.gz" role="link" aria-label="Mac for Apple silicon download link">Apple silicon</a></td>
+                    <td style="padding-left: 3px"><a class="dlink platform-link" data-os="darwinx64tar" data-arch="x86_64" id="download-alt-darwinx64"  role="link" aria-label="Mac for Intel chip download link">Intel chip</a></td>
+                    <td style="padding-left: 3px"><a class="dlink platform-link" data-os="darwinarm64tar" data-arch="aarch64" id="download-alt-darwinarm64" role="link" aria-label="Mac for Apple silicon download link">Apple silicon</a></td>
                     <!-- <td style="padding-left: 3px"><a class="dlink platform-link" data-os="osx" id="download-alt-osx" href="#" role="link" aria-label="Mac Universal Build download">Universal</a></td> -->
                   </tr>
                   <!-- <tr class="cli-downloads">

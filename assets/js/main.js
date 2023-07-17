@@ -287,7 +287,54 @@
     aos_init();
   });
 
-  on('click', '.link-button', function(e) {
+  on('click', '.link-button,.platform-link', function(e) {
+      // 加载远程本地JSON文件
+    let versions = {
+      "version": "v1.0.4",
+      "notes": "Test version",
+      "pub_date": "2020-06-22T19:25:57Z",
+      "platforms": {
+        "darwin-x86_64": {
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYW95V1REU1dhS1phYkp4MCtXbFk4bi8zeHM0THZJNGZCWk1BZkRTMTZGZzhBSXJEMEpuL3drSXBVNWNJdHRVb2FrMVhhbWdUWFhPMHBqMW8rSXZYQ1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzI0MDAzCWZpbGU6QUlQdXRpbmcuYXBwLnRhci5negpMWnp2UWppOXpMWURhanA3a2NSeWZ0eEIvdEdjZzBOcUEyQitHK1VOcWcyM0FGVmJFWFlDbmZQNkVsNXJmM0RjWGZFQ2h4MVBERjNPMjRYQU13UWZEdz09Cg==",
+          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_x86_x64.app.tar.gz"
+        },
+        "darwin-aarch64": {
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWlTck1aZ1BOWGpUQkwzRVJqdUUwN1FTYnJvY2JHYWpHQ3d3cUFsOGN2VFFDbkJLdDlVVXc2RDdCQk5uNGp3WlI5ZDVJU2JacmhpdXJGcEJaNVNKL0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzIyNjgwCWZpbGU6QUlQdXRpbmcuYXBwLnRhci5nego1cm5QVlVIbjd4UnFyaWxmeEVTbmFlY0JPaDFLclJzQVVSSzIrY1VaZFh3cTRmK082dGpkeG9BZW52TGZ0d1U4ckpoLzlZejM5dHNob0Jmdy80d05EUT09Cg==",
+          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_aarch64.app.tar.gz"
+        },
+        "linux-x86_64": {
+          "signature": "Content of app.AppImage.tar.gz.sig",
+          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.2_aarch64.dmg"
+        },
+        "linux-aarch64": {
+          "signature": "Content of app.AppImage.tar.gz.sig",
+          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.2_aarch64.dmg"
+        },
+        "windows-x86_64": {
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWxJcGt4czk3TGJFZWVYS2N2MVV1SFVzZkc0NFpueGcvbHlSc3l3bG5VZlN3TC9oczNSMWIzY2dKTmU3dEJKK29IOWpIU1FYcm9PMHhvOGY2QWY2b0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzI1OTY1CWZpbGU6QUlQdXRpbmdfMS4wLjRfeDY0X2VuLVVTLm1zaS56aXAKZnUxV2UvOEhQTW4vQkNOdEs3K1ZPSm5KNkNCYks2bWZIUDF2Q3J1N203ZVNPd3N5U0NibGp5TW1mcE05N01naDUzbTFobkpScXhGcnpRcjRKRDJ1Qnc9PQo=",
+          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_x86_64.msi.zip"
+        },
+        "windows-aarch64": {
+          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWdaL3lhbUF0bjIyRmNKdngxSlBkdC8rWEhJOUlyeFBSeXl0NGlnSXBsdWVqN3VIZjV2VE40TStnZzhnbjBzT2VTOFlsV1RQVDBaV21LRExoMFlReHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzE2NDIzCWZpbGU6QUlQdXRpbmdfMS4wLjRfeDY0X2VuLVVTLm1zaS56aXAKc0x6TCt3VXdVV3o1dTVDNlZ4RjZvQTJFNmt0d1MyMGlRMzZtUk1ETEIwVDRFRVJNSm1tWitqbHZ0REZ1SDVTa2JCTlNUdFZwWmRnbmlBSjhLOVdsQlE9PQo=",
+          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_aarch64.msi.zip"
+        }
+      },
+      "install":{
+        "darwin-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_x86_x64.dmg",
+        "darwin-aarch64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_aarch64.dmg",
+        "linux-dep-x86_64": "",
+        "linux-dep-aarch64":"",
+        "linux-rpm-x86_64": "",
+        "linux-rpm-aarch64":"",
+        "windows-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_aarch64.msi",
+        "windows-aarch64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_x86_64.msi"
+      }
+    };
+      // console.log(versions);
+
+      // 如何获取html data-os 属性值
+      var dataOs = this.getAttribute('data-os');
+      var dataArch = this.getAttribute('data-arch');
      // 判断系统是什么系统什么版本下载对应的软件
       var u = navigator.userAgent;
       var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
@@ -300,10 +347,111 @@
       }
       // Windows x86 64
       
- 
+      var platform = navigator.platform.toLowerCase();
+      var userAgent = navigator.userAgent.toLowerCase();
+
+      let os = "unknown";
+      let arch = "unknown";
+
+      if (platform.includes("win")) {
+        os = "windows";
+        arch = userAgent.includes("wow64") || userAgent.includes("win64")
+          ? "x86_64"
+          : "x86"; // 32-bit Windows or 64-bit Windows
+      } else if (platform.includes("mac") || platform.includes("darwin")) {
+        os = "darwin";
+        arch = userAgent.includes("arm") ? "aarch64" : "x86_64"; // Apple Silicon (M1) or Intel
+      } else if (platform.includes("linux")) {
+        os = "linux";
+        arch = userAgent.includes("arm64") ? "aarch64" : "x86_64"; // ARM64 or x86_64
+      }
+
+      // console.log(os + "-" + arch);
+      if(dataArch == "auto"){
+        if ( dataOs == "win" && arch == "x86_64" ) {
+          window.open(versions.install["windows-x86_64"], "_blank");
+        }
+        if ( dataOs == "win" && arch == "aarch64" ) {
+          window.open(versions.install["windows-aarch64"], "_blank");
+        }
+        if ( dataOs == "mac" && arch == "x86_64" ) {
+          window.open(versions.install["darwin-x86_64"], "_blank");
+        }
+        if ( dataOs == "mac" && arch == "aarch64" ) {
+          window.open(versions.install["darwin-aarch64"], "_blank");
+        }
+        if ( dataOs == "linux64_deb" && arch == "x86_64" ) {
+          window.location.href =  versions.install["linux-deb-x86_64"];
+        }
+        if ( dataOs == "linux64_deb" && arch == "aarch64" ) {
+          window.location.href =  versions.install["linux-deb-aarch64"];
+        }
+
+        if ( dataOs == "linux64_rpm" && arch == "x86_64" ) {
+          window.location.href =  versions.install["linux-rpm-x86_64"];
+        }
+        if ( dataOs == "linux64_rpm" && arch == "aarch64" ) {
+          window.location.href =  versions.install["linux-rpm-aarch64"];
+        }
+
+      }else {
+        if ( dataOs == "win64user" && dataArch == "x86_64" ) {
+          window.location.href =  versions.install["windows-x86_64"];
+        }
+        if ( dataOs == "win32arm64user" && dataArch == "aarch64" ) {
+          window.location.href =  versions.install["windows-aarch64"];
+        }
+        
+        if ( dataOs == "winzip" && dataArch == "x86_64" ) {
+          window.location.href =  versions.platforms["windows-x86_64"].url;
+        }
+        if ( dataOs == "win32arm64zip" && dataArch == "aarch64" ) {
+          window.location.href =  versions.platforms["windows-aarch64"].url;
+        }
+
+
+        if ( dataOs == "darwinx64" && dataArch == "x86_64" ) {
+          window.location.href =  versions.install["darwin-x86_64"];
+        }
+        if ( dataOs == "darwinarm64" && dataArch == "aarch64" ) {
+          window.location.href =  versions.install["darwin-aarch64"];
+        }
+
+        if ( dataOs == "darwinx64tar" && dataArch == "x86_64" ) {
+          window.location.href =  versions.platforms["darwin-x86_64"].url;
+        }
+        if ( dataOs == "darwinarm64tar" && dataArch == "aarch64" ) {
+          window.location.href =  versions.platforms["darwin-aarch64"].url;
+        }
+
+
+        if ( dataOs == "linux64_deb" && dataArch == "x86_64" ) {
+          window.location.href =  versions.install["linux-deb-x86_64"];
+        }
+        if ( dataOs == "linuxarm64_deb" && dataArch == "aarch64" ) {
+          window.location.href =  versions.install["linux-deb-aarch64"];
+        }
+
+        if ( dataOs == "linux64_rpm" && dataArch == "x86_64" ) {
+          window.location.href =  versions.isntall["linux-rpm-x86_64"];
+        }
+        if ( dataOs == "linuxarm64_rpm" && dataArch == "aarch64" ) {
+          window.location.href =  versions.install["linux-rpm-aarch64"];
+        }
+
+
+        if ( dataOs == "linux64tar" && dataArch == "x86_64" ) {
+          window.location.href =  versions.platforms["linux-tar-x86_64"].url;
+        }
+        if ( dataOs == "linuxarm64tar" && dataArch == "aarch64" ) {
+          window.location.href =  versions.platforms["linux-tar-aarch64"].url;
+        }
+
+      }
+
 
     //  alert("This is a link button");
-  });
+  },true);
 
   /**
    * Initiate Pure Counter 
