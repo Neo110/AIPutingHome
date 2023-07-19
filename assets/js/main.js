@@ -288,48 +288,30 @@
   });
 
   on('click', '.link-button,.platform-link', function(e) {
-      // 加载远程本地JSON文件
-    let versions = {
-      "version": "v1.0.4",
-      "notes": "Test version",
-      "pub_date": "2020-06-22T19:25:57Z",
-      "platforms": {
-        "darwin-x86_64": {
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYW95V1REU1dhS1phYkp4MCtXbFk4bi8zeHM0THZJNGZCWk1BZkRTMTZGZzhBSXJEMEpuL3drSXBVNWNJdHRVb2FrMVhhbWdUWFhPMHBqMW8rSXZYQ1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzI0MDAzCWZpbGU6QUlQdXRpbmcuYXBwLnRhci5negpMWnp2UWppOXpMWURhanA3a2NSeWZ0eEIvdEdjZzBOcUEyQitHK1VOcWcyM0FGVmJFWFlDbmZQNkVsNXJmM0RjWGZFQ2h4MVBERjNPMjRYQU13UWZEdz09Cg==",
-          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_x86_x64.app.tar.gz"
-        },
-        "darwin-aarch64": {
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWlTck1aZ1BOWGpUQkwzRVJqdUUwN1FTYnJvY2JHYWpHQ3d3cUFsOGN2VFFDbkJLdDlVVXc2RDdCQk5uNGp3WlI5ZDVJU2JacmhpdXJGcEJaNVNKL0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzIyNjgwCWZpbGU6QUlQdXRpbmcuYXBwLnRhci5nego1cm5QVlVIbjd4UnFyaWxmeEVTbmFlY0JPaDFLclJzQVVSSzIrY1VaZFh3cTRmK082dGpkeG9BZW52TGZ0d1U4ckpoLzlZejM5dHNob0Jmdy80d05EUT09Cg==",
-          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_aarch64.app.tar.gz"
-        },
-        "linux-x86_64": {
-          "signature": "Content of app.AppImage.tar.gz.sig",
-          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.2_aarch64.dmg"
-        },
-        "linux-aarch64": {
-          "signature": "Content of app.AppImage.tar.gz.sig",
-          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.2_aarch64.dmg"
-        },
-        "windows-x86_64": {
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWxJcGt4czk3TGJFZWVYS2N2MVV1SFVzZkc0NFpueGcvbHlSc3l3bG5VZlN3TC9oczNSMWIzY2dKTmU3dEJKK29IOWpIU1FYcm9PMHhvOGY2QWY2b0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzI1OTY1CWZpbGU6QUlQdXRpbmdfMS4wLjRfeDY0X2VuLVVTLm1zaS56aXAKZnUxV2UvOEhQTW4vQkNOdEs3K1ZPSm5KNkNCYks2bWZIUDF2Q3J1N203ZVNPd3N5U0NibGp5TW1mcE05N01naDUzbTFobkpScXhGcnpRcjRKRDJ1Qnc9PQo=",
-          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_x86_64.msi.zip"
-        },
-        "windows-aarch64": {
-          "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWdaL3lhbUF0bjIyRmNKdngxSlBkdC8rWEhJOUlyeFBSeXl0NGlnSXBsdWVqN3VIZjV2VE40TStnZzhnbjBzT2VTOFlsV1RQVDBaV21LRExoMFlReHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5MzE2NDIzCWZpbGU6QUlQdXRpbmdfMS4wLjRfeDY0X2VuLVVTLm1zaS56aXAKc0x6TCt3VXdVV3o1dTVDNlZ4RjZvQTJFNmt0d1MyMGlRMzZtUk1ETEIwVDRFRVJNSm1tWitqbHZ0REZ1SDVTa2JCTlNUdFZwWmRnbmlBSjhLOVdsQlE9PQo=",
-          "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_aarch64.msi.zip"
+    // 定义一个变量来存储加载的 JSON 数据
+    let versions;
+
+    // 使用 fetch 进行异步请求
+    fetch('https://www.aiputing.com/releases/latest.json')
+      .then(response => {
+        // 检查网络请求是否成功
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
         }
-      },
-      "install":{
-        "darwin-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_x86_x64.dmg",
-        "darwin-aarch64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_darwin_aarch64.dmg",
-        "linux-dep-x86_64": "",
-        "linux-dep-aarch64":"",
-        "linux-rpm-x86_64": "",
-        "linux-rpm-aarch64":"",
-        "windows-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_aarch64.msi",
-        "windows-aarch64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.4/AIPuting_1.0.4_windows_x86_64.msi"
-      }
-    };
+        // 将响应转换为 JSON 格式
+        return response.json();
+      })
+      .then(data => {
+        // 将加载的 JSON 数据存储到变量 jsonData 中
+        versions = data;
+        // 在这里可以继续使用 jsonData 变量进行后续操作
+        console.log(jsonData);
+      })
+      .catch(error => {
+        console.error('Fetch error:', error);
+      });
+
+ 
       // console.log(versions);
 
       // 如何获取html data-os 属性值

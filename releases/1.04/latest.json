@@ -1,6 +1,6 @@
 {
     "version": "v1.0.4",
-    "notes": "Test version",
+    "notes": "修复已知问题",
     "pub_date": "2020-06-22T19:25:57Z",
     "platforms": {
       "darwin-x86_64": {
