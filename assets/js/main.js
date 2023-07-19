@@ -305,7 +305,7 @@
         // 将加载的 JSON 数据存储到变量 jsonData 中
         versions = data;
         // 在这里可以继续使用 jsonData 变量进行后续操作
-        console.log(jsonData);
+        console.log(versions);
       })
       .catch(error => {
         console.error('Fetch error:', error);
