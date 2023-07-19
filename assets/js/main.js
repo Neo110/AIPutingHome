@@ -306,130 +306,128 @@
         versions = data;
         // 在这里可以继续使用 jsonData 变量进行后续操作
         console.log(versions);
+        // 如何获取html data-os 属性值
+        var dataOs = this.getAttribute('data-os');
+        var dataArch = this.getAttribute('data-arch');
+        // 判断系统是什么系统什么版本下载对应的软件
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if(isAndroid){
+          window.location.href = "https://www.pgyer.com/5Q1L";
+        }
+        if(isiOS){
+          window.location.href = "https://www.pgyer.com/5Q1L";
+        }
+        // Windows x86 64
+        
+        var platform = navigator.platform.toLowerCase();
+        var userAgent = navigator.userAgent.toLowerCase();
+
+        let os = "unknown";
+        let arch = "unknown";
+
+        if (platform.includes("win")) {
+          os = "windows";
+          arch = userAgent.includes("wow64") || userAgent.includes("win64")
+            ? "x86_64"
+            : "x86"; // 32-bit Windows or 64-bit Windows
+        } else if (platform.includes("mac") || platform.includes("darwin")) {
+          os = "darwin";
+          arch = userAgent.includes("arm") ? "aarch64" : "x86_64"; // Apple Silicon (M1) or Intel
+        } else if (platform.includes("linux")) {
+          os = "linux";
+          arch = userAgent.includes("arm64") ? "aarch64" : "x86_64"; // ARM64 or x86_64
+        }
+
+        // console.log(os + "-" + arch);
+        if(dataArch == "auto"){
+          if ( dataOs == "win" && arch == "x86_64" ) {
+            window.open(versions.install["windows-x86_64"], "_blank");
+          }
+          if ( dataOs == "win" && arch == "aarch64" ) {
+            window.open(versions.install["windows-aarch64"], "_blank");
+          }
+          if ( dataOs == "mac" && arch == "x86_64" ) {
+            window.open(versions.install["darwin-x86_64"], "_blank");
+          }
+          if ( dataOs == "mac" && arch == "aarch64" ) {
+            window.open(versions.install["darwin-aarch64"], "_blank");
+          }
+          if ( dataOs == "linux64_deb" && arch == "x86_64" ) {
+            window.location.href =  versions.install["linux-deb-x86_64"];
+          }
+          if ( dataOs == "linux64_deb" && arch == "aarch64" ) {
+            window.location.href =  versions.install["linux-deb-aarch64"];
+          }
+
+          if ( dataOs == "linux64_rpm" && arch == "x86_64" ) {
+            window.location.href =  versions.install["linux-rpm-x86_64"];
+          }
+          if ( dataOs == "linux64_rpm" && arch == "aarch64" ) {
+            window.location.href =  versions.install["linux-rpm-aarch64"];
+          }
+
+        }else {
+          if ( dataOs == "win64user" && dataArch == "x86_64" ) {
+            window.location.href =  versions.install["windows-x86_64"];
+          }
+          if ( dataOs == "win32arm64user" && dataArch == "aarch64" ) {
+            window.location.href =  versions.install["windows-aarch64"];
+          }
+          
+          if ( dataOs == "winzip" && dataArch == "x86_64" ) {
+            window.location.href =  versions.platforms["windows-x86_64"].url;
+          }
+          if ( dataOs == "win32arm64zip" && dataArch == "aarch64" ) {
+            window.location.href =  versions.platforms["windows-aarch64"].url;
+          }
+
+
+          if ( dataOs == "darwinx64" && dataArch == "x86_64" ) {
+            window.location.href =  versions.install["darwin-x86_64"];
+          }
+          if ( dataOs == "darwinarm64" && dataArch == "aarch64" ) {
+            window.location.href =  versions.install["darwin-aarch64"];
+          }
+
+          if ( dataOs == "darwinx64tar" && dataArch == "x86_64" ) {
+            window.location.href =  versions.platforms["darwin-x86_64"].url;
+          }
+          if ( dataOs == "darwinarm64tar" && dataArch == "aarch64" ) {
+            window.location.href =  versions.platforms["darwin-aarch64"].url;
+          }
+
+
+          if ( dataOs == "linux64_deb" && dataArch == "x86_64" ) {
+            window.location.href =  versions.install["linux-deb-x86_64"];
+          }
+          if ( dataOs == "linuxarm64_deb" && dataArch == "aarch64" ) {
+            window.location.href =  versions.install["linux-deb-aarch64"];
+          }
+
+          if ( dataOs == "linux64_rpm" && dataArch == "x86_64" ) {
+            window.location.href =  versions.isntall["linux-rpm-x86_64"];
+          }
+          if ( dataOs == "linuxarm64_rpm" && dataArch == "aarch64" ) {
+            window.location.href =  versions.install["linux-rpm-aarch64"];
+          }
+
+
+          if ( dataOs == "linux64tar" && dataArch == "x86_64" ) {
+            window.location.href =  versions.platforms["linux-tar-x86_64"].url;
+          }
+          if ( dataOs == "linuxarm64tar" && dataArch == "aarch64" ) {
+            window.location.href =  versions.platforms["linux-tar-aarch64"].url;
+          }
+
+        }
       })
       .catch(error => {
         console.error('Fetch error:', error);
       });
 
  
-      // console.log(versions);
-
-      // 如何获取html data-os 属性值
-      var dataOs = this.getAttribute('data-os');
-      var dataArch = this.getAttribute('data-arch');
-     // 判断系统是什么系统什么版本下载对应的软件
-      var u = navigator.userAgent;
-      var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-      var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-      if(isAndroid){
-        window.location.href = "https://www.pgyer.com/5Q1L";
-      }
-      if(isiOS){
-        window.location.href = "https://www.pgyer.com/5Q1L";
-      }
-      // Windows x86 64
-      
-      var platform = navigator.platform.toLowerCase();
-      var userAgent = navigator.userAgent.toLowerCase();
-
-      let os = "unknown";
-      let arch = "unknown";
-
-      if (platform.includes("win")) {
-        os = "windows";
-        arch = userAgent.includes("wow64") || userAgent.includes("win64")
-          ? "x86_64"
-          : "x86"; // 32-bit Windows or 64-bit Windows
-      } else if (platform.includes("mac") || platform.includes("darwin")) {
-        os = "darwin";
-        arch = userAgent.includes("arm") ? "aarch64" : "x86_64"; // Apple Silicon (M1) or Intel
-      } else if (platform.includes("linux")) {
-        os = "linux";
-        arch = userAgent.includes("arm64") ? "aarch64" : "x86_64"; // ARM64 or x86_64
-      }
-
-      // console.log(os + "-" + arch);
-      if(dataArch == "auto"){
-        if ( dataOs == "win" && arch == "x86_64" ) {
-          window.open(versions.install["windows-x86_64"], "_blank");
-        }
-        if ( dataOs == "win" && arch == "aarch64" ) {
-          window.open(versions.install["windows-aarch64"], "_blank");
-        }
-        if ( dataOs == "mac" && arch == "x86_64" ) {
-          window.open(versions.install["darwin-x86_64"], "_blank");
-        }
-        if ( dataOs == "mac" && arch == "aarch64" ) {
-          window.open(versions.install["darwin-aarch64"], "_blank");
-        }
-        if ( dataOs == "linux64_deb" && arch == "x86_64" ) {
-          window.location.href =  versions.install["linux-deb-x86_64"];
-        }
-        if ( dataOs == "linux64_deb" && arch == "aarch64" ) {
-          window.location.href =  versions.install["linux-deb-aarch64"];
-        }
-
-        if ( dataOs == "linux64_rpm" && arch == "x86_64" ) {
-          window.location.href =  versions.install["linux-rpm-x86_64"];
-        }
-        if ( dataOs == "linux64_rpm" && arch == "aarch64" ) {
-          window.location.href =  versions.install["linux-rpm-aarch64"];
-        }
-
-      }else {
-        if ( dataOs == "win64user" && dataArch == "x86_64" ) {
-          window.location.href =  versions.install["windows-x86_64"];
-        }
-        if ( dataOs == "win32arm64user" && dataArch == "aarch64" ) {
-          window.location.href =  versions.install["windows-aarch64"];
-        }
-        
-        if ( dataOs == "winzip" && dataArch == "x86_64" ) {
-          window.location.href =  versions.platforms["windows-x86_64"].url;
-        }
-        if ( dataOs == "win32arm64zip" && dataArch == "aarch64" ) {
-          window.location.href =  versions.platforms["windows-aarch64"].url;
-        }
-
-
-        if ( dataOs == "darwinx64" && dataArch == "x86_64" ) {
-          window.location.href =  versions.install["darwin-x86_64"];
-        }
-        if ( dataOs == "darwinarm64" && dataArch == "aarch64" ) {
-          window.location.href =  versions.install["darwin-aarch64"];
-        }
-
-        if ( dataOs == "darwinx64tar" && dataArch == "x86_64" ) {
-          window.location.href =  versions.platforms["darwin-x86_64"].url;
-        }
-        if ( dataOs == "darwinarm64tar" && dataArch == "aarch64" ) {
-          window.location.href =  versions.platforms["darwin-aarch64"].url;
-        }
-
-
-        if ( dataOs == "linux64_deb" && dataArch == "x86_64" ) {
-          window.location.href =  versions.install["linux-deb-x86_64"];
-        }
-        if ( dataOs == "linuxarm64_deb" && dataArch == "aarch64" ) {
-          window.location.href =  versions.install["linux-deb-aarch64"];
-        }
-
-        if ( dataOs == "linux64_rpm" && dataArch == "x86_64" ) {
-          window.location.href =  versions.isntall["linux-rpm-x86_64"];
-        }
-        if ( dataOs == "linuxarm64_rpm" && dataArch == "aarch64" ) {
-          window.location.href =  versions.install["linux-rpm-aarch64"];
-        }
-
-
-        if ( dataOs == "linux64tar" && dataArch == "x86_64" ) {
-          window.location.href =  versions.platforms["linux-tar-x86_64"].url;
-        }
-        if ( dataOs == "linuxarm64tar" && dataArch == "aarch64" ) {
-          window.location.href =  versions.platforms["linux-tar-aarch64"].url;
-        }
-
-      }
 
 
     //  alert("This is a link button");
