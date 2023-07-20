@@ -31,8 +31,8 @@
   "install":{
     "darwin-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64.dmg",
     "darwin-aarch64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64.dmg",
-    "linux-dep-x86_64": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/ai-puting_1.0.6_amd64.deb",
-    "linux-dep-aarch64":"",
+    "linux-deb-x86_64": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/ai-puting_1.0.6_amd64.deb",
+    "linux-deb-aarch64":"",
     "linux-rpm-x86_64": "",
     "linux-rpm-aarch64":"",
     "windows-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64-setup.exe",
