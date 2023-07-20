@@ -340,7 +340,7 @@
           arch = userAgent.includes("arm64") ? "aarch64" : "x86_64"; // ARM64 or x86_64
         }
 
-        // console.log(os + "-" + arch);
+        console.log(os + "-" + arch);
         if(dataArch == "auto"){
           if ( dataOs == "win" && arch == "x86_64" ) {
             window.open(versions.install["windows-x86_64"], "_blank");
