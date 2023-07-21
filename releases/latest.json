@@ -1,41 +1,41 @@
 {
-  "version": "v1.0.6",
-  "notes": "修复已知问题",
+  "version": "v1.0.7",
+  "notes": "修复windows \n\r 性能优化。\n\r 切换主题优化，崩溃等问题。",
   "pub_date": "2020-06-22T19:25:57Z",
   "platforms": {
     "darwin-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWpFdk13NXl6Tzl5c2VxZXMrZ0JLRExRK3k2U0NXdXdlTnhhVTBaYUNzQmgwYTJMYUlnNXY2OU5XSStKYU1PL0JSM0lTOXFUaEhEYVl2NXZKMktNb2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5NzUzMjg5CWZpbGU6QUlQdXRpbmcuYXBwLnRhci5negpyU1FVbDU5aE0yNTdCMHUxYXc2Y016Qzk2cXEwSEFZUytFaEJRYVB3K1BPMllhY0VhbFhvR00xdkNTRHhnUS9UaHBoRE9mVFJHN1pRcUgyUjU5bEtDZz09Cg==",
-      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_x64.app.tar.gz"
+      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/AIPuting_x64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXVUcjBRcmZ0TWV1bkxSVW1YZDRGTlI0WlFQYURnRVhPczUrM1BXaTBwNTlVQnhQekh3SmlNZW9icXFtVVl0SjJ6TUVKMlVnYm5kaVllaWU0ajJtZ2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5NzUzMTQwCWZpbGU6QUlQdXRpbmdfMS4wLjZfeDY0X2VuLVVTLm1zaS56aXAKeldoaGtuZ0NsOE1sL09SY2RWMkp6bVcraXFDN3E3S0MvTmpzUFB4dUJxOEljcC8xa0dnWTFBNG9ER1dSaXhxb1ZLL3dIbm5UTDJWUFdxU2o3N1E4Q1E9PQo=",
-      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYW9Jc3J2YjBBTGp4aEhvMHE1b2JEc0dZNmlTM2FlRXZIOTJ6dWREcm1NWFFKK1BoZTVqTFFzbFVDdis3OXJNZHlzTWtiQWljZzhsQlgyVlJzazZkcVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5OTMyODczCWZpbGU6QUlQdXRpbmcuYXBwLnRhci5negpLWFRJbWRkR1hsOFkyb3diN1ZYaTVEY2JlMkpwbExadXBYZjRVRVdLWWFKVHZIUmZoR0d1cE5ub2ZkMGxscTBZeDI3RTlaZ2g3d3g4ZmhuN1dYcWREdz09Cg==",
+      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/AIPuting_1.0.7_aarch64.app.tar.gz"
     },
     "linux-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWsvZHFKSEVGTWpVMjJIUCtQbDBkYTdrZSsxSkRwcWI1MEI2SFZHc2E2WlV2SHFGMzdUYnNXNVBMYlpHRFkwL0xpblpLYllRUHdVTVFoZjZFUTRkTndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5NzUzMDA1CWZpbGU6YWktcHV0aW5nXzEuMC42X2FtZDY0LkFwcEltYWdlLnRhci5negpmTTM2elFkNktpUk1DaUZIQStkSDdIRnY4d0YrNTVTZFFEdjhHTGlPdUl0OUpBOWpBRnFhdCtDTVRtMlR2UWNhVEpmdUs0MkNPdDF6M2dvb2NJNGFDdz09Cg==",
-      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/ai-puting_1.0.6_amd64.AppImage.tar.gz"
+      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/ai-puting_1.0.6_amd64.AppImage.tar.gz"
     },
     "linux-aarch64": {
       "signature": "Content of app.AppImage.tar.gz.sig",
-      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_aarch64.dmg"
+      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/AIPuting_1.0.6_aarch64.dmg"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXVUcjBRcmZ0TWV1bkxSVW1YZDRGTlI0WlFQYURnRVhPczUrM1BXaTBwNTlVQnhQekh3SmlNZW9icXFtVVl0SjJ6TUVKMlVnYm5kaVllaWU0ajJtZ2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5NzUzMTQwCWZpbGU6QUlQdXRpbmdfMS4wLjZfeDY0X2VuLVVTLm1zaS56aXAKeldoaGtuZ0NsOE1sL09SY2RWMkp6bVcraXFDN3E3S0MvTmpzUFB4dUJxOEljcC8xa0dnWTFBNG9ER1dSaXhxb1ZLL3dIbm5UTDJWUFdxU2o3N1E4Q1E9PQo=",
-      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXVsend3RDNJNzJQTE0xbFBISU9vOGN4SlJUWWRuUmRJSytZRDlTeGdHNCtZdWdhVTRJV1RqbGV5SHg4cmNmUFNVK3preVN4a3FLN21ORWRvNDZyUlFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5OTQ3Njc0CWZpbGU6QUlQdXRpbmdfMS4wLjdfeDY0X2VuLVVTLm1zaS56aXAKRjh2N3NDSG90d2VBNEorMVY2MXg3SmRvbkx1cTF0bHNmUjJWWnM0cy9VSVB6d1V3VE0vYUUxa3E0cW5QTWtzOGk5eEZ3L05lOHNTQVRWK0QwcUtxQlE9PQo=",
+      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/AIPuting_1.0.6_x64_en-US.msi.zip"
     },
     "windows-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXVUcjBRcmZ0TWV1bkxSVW1YZDRGTlI0WlFQYURnRVhPczUrM1BXaTBwNTlVQnhQekh3SmlNZW9icXFtVVl0SjJ6TUVKMlVnYm5kaVllaWU0ajJtZ2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5NzUzMTQwCWZpbGU6QUlQdXRpbmdfMS4wLjZfeDY0X2VuLVVTLm1zaS56aXAKeldoaGtuZ0NsOE1sL09SY2RWMkp6bVcraXFDN3E3S0MvTmpzUFB4dUJxOEljcC8xa0dnWTFBNG9ER1dSaXhxb1ZLL3dIbm5UTDJWUFdxU2o3N1E4Q1E9PQo=",
-      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYWlQU0JPZm9TUkQweFU5aFI0T2pVL1QwSUJlMEZBcUdKazdtcFp6OUhzSW5DWENCTG8vOGRzMHVQSzhyOVJ6Y2s5UFJycmVIZ2ZQWXJ4THdkVW9wOEFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjg5OTI5MDMxCWZpbGU6QUlQdXRpbmdfMS4wLjdfeDY0X2VuLVVTLm1zaS56aXAKaU54OFpUR1AvR05ad28zdHlIVDJkNEdMUUYzaUlkTnA3TzR0azlkY3daTmhaeFNRNWZKTU4zVW5FUTJMN3pjbkdaM0Joc0wweFpZK2Yza1dFZHJjQ0E9PQo=",
+      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/AIPuting_1.0.7_x86_x64_en-US.msi.zip"
     }
   },
   "install":{
-    "darwin-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64.dmg",
-    "darwin-aarch64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64.dmg",
-    "linux-deb-x86_64": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/ai-puting_1.0.6_amd64.deb",
+    "darwin-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/AIPuting_1.0.6_x64.dmg",
+    "darwin-aarch64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/AIPuting_1.0.7_aarch64.dmg",
+    "linux-deb-x86_64": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/ai-puting_1.0.6_amd64.deb",
     "linux-deb-aarch64":"",
     "linux-rpm-x86_64": "",
     "linux-rpm-aarch64":"",
-    "windows-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64-setup.exe",
-    "windows-aarch64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.6/AIPuting_1.0.6_x64_en-US.msi"
+    "windows-x86_64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/AIPuting_1.0.7_x86_x64_en-US.msi",
+    "windows-aarch64":"https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.7/AIPuting_1.0.7_x64_en-US.msi"
   }
 }
