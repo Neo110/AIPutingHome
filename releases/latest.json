@@ -1,7 +1,7 @@
 {
   "version": "v1.0.9",
   "notes": "修复windows \n\r 性能优化。\n\r 切换主题优化，崩溃等问题。",
-  "pub_date": "2023-09-27T19:25:57Z",
+  "pub_date": "",
   "platforms": {
     "darwin-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXA1VHNjcTk0LzF2ZlQ2Q3prK0U4clY4OFVscklnWDh5RHY3Q2VEMnRLeTZGZWtJMVIvcWxkb1cwUEZJbkZiQUh2cFBYUDNZVmRGZWdxcjNoUDVuSFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1NzAzNTMzCWZpbGU6QUlQdXRpbmcuYXBwLnRhci5negpRZFlPTHlRbGVWTXIyUVlhdVNCZEoyUGU0NDUwcENURWZrYWpTcm5odnlsVDFPY2o4Z3JKdjc1YndTdWZuZ24xcHQ5MmpQTGZhWUNSL3pwTzRnT21CUT09Cg==",
