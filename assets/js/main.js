@@ -382,6 +382,13 @@
             window.location.href =  versions.install["linux-rpm-aarch64"];
           }
 
+          if ( dataOs == "linux64" && arch == "x86_64" ) {
+            window.location.href =  versions.install["linux-x86_64"];
+          }
+          if ( dataOs == "linux64" && arch == "aarch64" ) {
+            window.location.href =  versions.install["linux-aarch64"];
+          }
+
         }else {
           if ( dataOs == "win64user" && dataArch == "x86_64" ) {
             window.location.href =  versions.install["windows-x86_64"];
