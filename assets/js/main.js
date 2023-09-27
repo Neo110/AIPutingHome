@@ -297,7 +297,7 @@
     .then(data => {
       data.version;
       // 将data.version 写入到界面中通过id
-      document.getElementById("version").innerHTML = data.version;
+      document.getElementById("version").innerHTML = "最新版本 "+data.version;
     });
   });
 
