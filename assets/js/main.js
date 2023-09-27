@@ -285,6 +285,20 @@
   }
   window.addEventListener('load', () => {
     aos_init();
+    fetch('https://www.aiputing.com/releases/latest.json')
+    .then(response => {
+      // 检查网络请求是否成功
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      // 将响应转换为 JSON 格式
+      return response.json();
+    })
+    .then(data => {
+      data.version;
+      // 将data.version 写入到界面中通过id
+      document.getElementById("version").innerHTML = "最新版本 "+data.version;
+    });
   });
 
   on('click', '.link-button,.platform-link', function(e) {
