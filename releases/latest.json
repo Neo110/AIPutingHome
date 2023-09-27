@@ -5,11 +5,11 @@
   "platforms": {
     "darwin-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXA1VHNjcTk0LzF2ZlQ2Q3prK0U4clY4OFVscklnWDh5RHY3Q2VEMnRLeTZGZWtJMVIvcWxkb1cwUEZJbkZiQUh2cFBYUDNZVmRGZWdxcjNoUDVuSFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1NzAzNTMzCWZpbGU6QUlQdXRpbmcuYXBwLnRhci5negpRZFlPTHlRbGVWTXIyUVlhdVNCZEoyUGU0NDUwcENURWZrYWpTcm5odnlsVDFPY2o4Z3JKdjc1YndTdWZuZ24xcHQ5MmpQTGZhWUNSL3pwTzRnT21CUT09Cg==",
-      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_darwin_1.0.9_x86_64.app.tar.gz"
+      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_darwin_1.0.9_x86_64.tar.gz"
     },
     "darwin-aarch64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXJmMDZ1UExIR1daYk1hdnZxb21EWUJVNW1nNWhkUEFwdFFjTXhqSFB2WHJmZ3E5YndHcEJHcThhb1RZeW4yRnN5WnJWUW1HWUNDVmY2Z1RBWUR5WEE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1NzAyOTU5CWZpbGU6QUlQdXRpbmcuYXBwLnRhci5negpUQUxrbk5kL2lCZEpCVnk0SHRHMmw2MUltWHE4azIwR3EzdjhuczVhb0JBa21IWFRRWk1YS0pMek9tVk1CbFF0ZnorODd4SFpNZythenYwSUZJeXlBUT09Cg==",
-      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_darwin_1.0.9_aarch64.app.tar.gz"
+      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_darwin_1.0.9_aarch64.tar.gz"
     },
     "linux-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXF1Y0grUmlVYmlVeHNQbTR3elU4WXhjVjVPMjJsTkI4UDFWdUNEV05hR2lRR0N2SFpyN1N3S1hEWTljOUxRcnF0STd2bEcyazZqU0MzNjYwZ2FsUkFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1Nzc5MTY2CWZpbGU6YWktcHV0aW5nXzEuMC45X2FtZDY0LkFwcEltYWdlLnRhci5nego4R0EzNjVaUVZrMVdlbExLcmdsREZwZ2hNa1NHeEc1SEFLZ1lxWGVWNkNTK1BLY3puQ2Q0bkQ2REh3eVBIQ1JXZFdjQmdocWNsZDA3dkZiMHBWYzlBQT09Cg==",
