@@ -13,7 +13,7 @@
     },
     "linux-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTWkZMNTdQb2VyYXF1Y0grUmlVYmlVeHNQbTR3elU4WXhjVjVPMjJsTkI4UDFWdUNEV05hR2lRR0N2SFpyN1N3S1hEWTljOUxRcnF0STd2bEcyazZqU0MzNjYwZ2FsUkFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1Nzc5MTY2CWZpbGU6YWktcHV0aW5nXzEuMC45X2FtZDY0LkFwcEltYWdlLnRhci5nego4R0EzNjVaUVZrMVdlbExLcmdsREZwZ2hNa1NHeEc1SEFLZ1lxWGVWNkNTK1BLY3puQ2Q0bkQ2REh3eVBIQ1JXZFdjQmdocWNsZDA3dkZiMHBWYzlBQT09Cg==",
-      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_linux_1.0.9_amd64.tar.gz"
+      "url": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_linux_1.0.9_x86_64.tar.gz"
     },
     "linux-aarch64": {
       "signature": "",
@@ -31,7 +31,7 @@
   "install": {
     "darwin-x86_64": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_darwin_1.0.9_x86_64.dmg",
     "darwin-aarch64": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_darwin_1.0.9_aarch64.dmg",
-    "linux-deb-x86_64": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_linux_1.0.9_amd64.deb",
+    "linux-deb-x86_64": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_linux_1.0.9_x86_64.deb",
     "linux-deb-aarch64": "https://ghproxy.com/https://github.com/Neo110/AIPutingHome/releases/download/v1.0.9/AIPuting_linux_1.0.9_aarch64.deb",
     "linux-rpm-x86_64": "",
     "linux-rpm-aarch64": "",
