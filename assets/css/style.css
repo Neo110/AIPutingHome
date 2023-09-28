@@ -2790,3 +2790,20 @@ button,.link-button {
   font-weight: bold;
   font-size: 14px !important;
 }
+
+
+.rotate{
+  transform: rotate(360deg);
+  transition: all 0.5s;
+  animation: rotation 5s linear infinite;
+}
+
+@keyframes rotation {
+0% {
+  transform: rotate(0deg);
+}
+
+100% {
+  transform: rotate(360deg);
+}
+}
